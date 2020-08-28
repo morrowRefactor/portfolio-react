@@ -1,0 +1,70 @@
+.BioContact {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bioContactImage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.bioContactMediaLeft {
+    display: none;
+}
+
+.BioContact_contact h3 {
+    width: 90%;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bioContactLink {
+    text-decoration: none;
+    color: black;
+}
+
+.bioContactLink:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (min-width: 800px) {
+    .BioContact {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .BioContact_overview {
+        position: fixed;
+        width: 33%;
+        padding-top: 25px;
+    }
+
+    .bioContactMediaLeft {
+        display: block;
+    }
+
+    .bioContactMediaLeft h3 {
+        width: 70%;
+        border-bottom: 1px solid rgb(175, 175, 175);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bioContactImage {
+        width: 200px;
+    }
+
+    .BioContact_bio {
+        width: 50%;
+        text-align: left;
+        margin-left: 35%;
+    }
+
+    .BioContact_contact {
+        display: none;
+    }
+}

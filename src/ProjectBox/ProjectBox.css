@@ -1,0 +1,92 @@
+.ProjectBox {
+    border: 0.5px solid rgb(190, 190, 190);
+    border-radius: 3px;
+    width: 90%;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin: 0px auto 20px auto;
+}
+
+.projectBoxHeader {
+    margin-top: 0px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.projectBoxSummary {
+    padding-right: 15px;
+}
+
+.projectBoxTech {
+    font-size: 12px;
+}
+
+.ProjectBox_bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.ProjectBox_buttons {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.projectBoxButton {
+    width: 80%;
+    margin: 0px auto 15px auto;
+}
+
+.projectBoxImage {
+    width: 40%;
+    margin: auto 0px 0px auto;
+    border-bottom: 0.25px solid rgb(190, 190, 190);
+    border-right: 0.25px solid rgb(190, 190, 190);
+}
+
+@media (min-width: 800px) {
+    .ProjectBox {
+        border: 0.5px solid rgb(190, 190, 190);
+        border-radius: 3px;
+        width: 85%;
+        padding-top: 20px;
+        padding-left: 20px;
+        margin: 0px auto 20px auto;
+    }
+
+    .projectBoxSummary {
+        padding-right: 20px;
+        font-size: 18px;
+    }
+
+    .projectBoxHeader {
+        padding-right: 20px;
+        font-size: 24px;
+    }
+
+    .ProjectBox_buttons {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+    }
+
+    .projectBoxButton {
+        width: 200px;
+        line-height: 30px;
+        border: 1px solid rgb(170, 170, 170);
+        border-radius: 5px;
+        box-shadow: 1px 1px rgb(0,0,0,0.15);
+    }
+
+    .projectBoxButton:hover {
+        background-color: rgb(16, 60, 16);
+        color: white;
+    }
+
+    .projectBoxImage {
+        width: 20%;
+    }
+}
