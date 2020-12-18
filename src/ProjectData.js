@@ -1,6 +1,16 @@
 export default {
     'projects': [
         {
+            id: 4,
+            name: 'Tabletop Ledger',
+            summary: 'A full-stack app for board game enthusiast to log game sessions, earn badges, and climb leaderboards.  Implements account creation, authentication, bcrypt encryption, BGG API integration, and light gamification.',
+            tech: 'React, Node, Express, PostgreSQL, HTML, CSS, JWT Authentication, bcrypt encryption, BoardGameGeek API',
+            image: 'https://user-images.githubusercontent.com/58446465/102632574-23216d80-4104-11eb-837f-9cc2ba014a82.png',
+            appLink: 'https://tabletop-ledger.vercel.app/',
+            codeLink: 'https://github.com/morrowRefactor/tabletop-ledger-react-client',
+            serverLink: 'https://github.com/morrowRefactor/tabletop-ledger-express-api'
+        },
+        {
             id: 3,
             name: 'Follow My Lead',
             summary: `A full-stack app for creating and sharing custom routes of interest in cities all over the world.  The React client side utilizes Google Maps API while the server side is built with Node and PostgreSQL.`,
