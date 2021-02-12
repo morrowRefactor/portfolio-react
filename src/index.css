@@ -9,4 +9,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   line-height: 1.5;
+  background-image: url("https://user-images.githubusercontent.com/58446465/107708527-7b926880-6c78-11eb-897d-93f7d21c2298.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 540px) {
+  body {
+    background-image: url("https://user-images.githubusercontent.com/58446465/107711280-3a9c5300-6c7c-11eb-8930-eca743bae8ff.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }

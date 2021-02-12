@@ -22,7 +22,10 @@ class ProjectsMain extends Component {
 
         return (
             <section className="ProjectsMain">
-                {projects}
+                <h3>Projects</h3>
+                <section className='ProjectsMain_projects'>
+                    {projects}
+                </section>
             </section>
         );
     };

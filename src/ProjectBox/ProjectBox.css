@@ -5,6 +5,7 @@
     padding-top: 15px;
     padding-left: 15px;
     margin: 0px auto 20px auto;
+    position: relative;
 }
 
 .projectBoxHeader {
@@ -40,13 +41,20 @@
 }
 
 .projectBoxImage {
-    width: 40%;
-    margin: auto 0px 0px auto;
-    border-bottom: 0.25px solid rgb(190, 190, 190);
-    border-right: 0.25px solid rgb(190, 190, 190);
+    width: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
+    .projectBoxImage {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
     .ProjectBox {
         border: 0.5px solid rgb(190, 190, 190);
         border-radius: 3px;

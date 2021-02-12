@@ -1,5 +1,42 @@
-@media (min-width: 800px) {
+.ProjectsMain {
+    text-align: center;
+}
+
+.ProjectsMain > h3 {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+@media (min-width: 768px) {
     .ProjectsMain {
         width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ProjectsMain {
+        width: 80%;
+    }
+
+    .ProjectsMain > h3 {
+        font-size: 28px;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid rgb(185, 185, 185);
+    }
+    
+    .ProjectsMain_projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .ProjectsMain_projects > .ProjectBox {
+        width: 45%;
     }
 }

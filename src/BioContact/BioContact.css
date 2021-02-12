@@ -1,7 +1,19 @@
 .BioContact {
-    width: 90%;
+    width: 100%;
     text-align: center;
+    margin-top: 20%;
     margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.BioContact_overview,
+.BioContact_bio,
+.BioContact_contact {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .bioContactImage {
@@ -31,16 +43,37 @@
     text-decoration: underline;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
+    .BioContact {
+        width: 100%;
+    }
+
+    .BioContact_overview,
+    .BioContact_bio,
+    .BioContact_contact {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .bioContactImage {
+        width: 40%;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
     .BioContact {
         display: flex;
         flex-direction: row;
+        margin-top: 10%;
+        height: 70vh;
     }
 
     .BioContact_overview {
-        position: fixed;
-        width: 33%;
+        width: 30%;
         padding-top: 25px;
+        margin-right: 0px;
     }
 
     .bioContactMediaLeft {
@@ -48,7 +81,7 @@
     }
 
     .bioContactMediaLeft h3 {
-        width: 70%;
+        width: 50%;
         border-bottom: 1px solid rgb(175, 175, 175);
         margin-left: auto;
         margin-right: auto;
@@ -56,12 +89,14 @@
 
     .bioContactImage {
         width: 200px;
+        margin-top: 0px;
     }
 
     .BioContact_bio {
         width: 50%;
         text-align: left;
-        margin-left: 35%;
+        margin-left: 0px;
+        margin-right: 15%;
     }
 
     .BioContact_contact {

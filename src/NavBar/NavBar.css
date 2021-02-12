@@ -2,22 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+    position: relative;
     border: none;
     font-weight: bold;
     padding: 5px 10px 5px 10px;
     line-height: 40px;
     width: 100%;
     direction: rtl;
-    margin-bottom: 25px;
-    border-bottom: 1.5px solid rgb(16, 60, 16);
-    box-shadow: 0px 4px rgb(0,0,0,0.15);
 }
 
-.topnavHeader {
-    font-size: 18px;
-    color: rgb(16, 60, 16);
-    font-weight: bold;
-    text-decoration: none;
+.topNavImage {
+    width: 20px;
+    margin: 10px auto auto 5px;
 }
   
 .menu {
@@ -33,16 +29,23 @@
     margin: 0px 0px 0px auto;
     padding-right: 10px;
     direction: ltr;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 40%;
+    z-index: 1;
+    text-align: right;
+    margin-right: 10px;
+    background-color: rgb(120, 120, 120, 0.9);
 }
   
 .Topnav li {
     display: inline-block;
-    padding-left: 20px;
 }
 
 .menulink {
     text-decoration: none;
-    color: rgb(16, 60, 16);
+    color: white;
 }
   
 .hamburger {
@@ -62,13 +65,10 @@
 }
 
 .show {
-    margin-right: 0px;
-    margin-left: auto;
-    transition-timing-function: ease;
+    display: inline-block;
 }
 
-.hidden,
-.topNavImage {
+.hidden {
     display: none;
 }
 
@@ -79,11 +79,15 @@
 
 .hamburgerButton,
 .topNavLink {
-    background-color: white;
-    color: rgb(16, 60, 16);
+    color: white;
     border: none;
     text-decoration: none;
     font-size: .90em;
+    background-color: transparent;
+}
+
+.hamburgerButton {
+    color: black;
 }
 
 button:hover,
@@ -91,10 +95,27 @@ button:hover,
     cursor: pointer;
 }
 
-@media (min-width: 900px) {
+
+@media (min-width: 768px) {
+    .hamburgerButton {
+        margin-right: 10px;
+    }
+
+    .Topnav ul {
+        width: 150px;
+        margin: auto 20px auto auto;
+        border: none;
+    }
+
+    .topNavLink {
+        font-size: 18px;
+        color: white;
+    }
+}
+
+/* desktop adjustments */
+@media (min-width: 1200px) {
     .Topnav {
-        background-color: white;
-        border-bottom: solid 2px rgb(16, 60, 16);
         padding: auto 20px auto 20px;
     }
 
@@ -112,12 +133,6 @@ button:hover,
         height: 25px;
     }
 
-    .topnavHeader {
-        font-size: 22px;
-        font-weight: bold;
-        color: rgb(16, 60, 16);
-    }
-
     .hamburger,
     .hamburgerButton {
         display: none;
@@ -128,13 +143,14 @@ button:hover,
         display: inline-block;
     }
 
-    .Topnav ul {
+    .Topnav > ul {
+        position: relative;
+        width: 50%;
         margin: auto 50px auto auto;
+        background-color: transparent;
     }
 
     .topNavLink {
-        font-size: 18px;
-        background-color: white;
-        color: rgb(16, 60, 16);
+        margin-left: 20px;
     }
 }

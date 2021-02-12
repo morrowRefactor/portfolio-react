@@ -16,10 +16,10 @@ class Overview extends Component {
 
         return (
             <section className="Overview">
-                <img className="overviewImage" src={avatarImage} alt="morrowRefactor Avatar" />
                 <div className="Overview_bio">
-                    <h2 className='overviewHeader'>Hi, I’m Kurt.<br/>I’m a newly-minted web developer with a penchant for user engagement.</h2>
-                    <p>I’m a current student of the Front End Web Development program at Thinkful. Prior to my pursuit of Web Development I spent about 10 years spelunking in the world of Marketing Operations and Automation. I’ve always been drawn to building things and solving puzzles.</p>     
+                    <h2 className='overviewHeader'>KURT MORROW</h2>
+                    <p className='overviewSubHeader'>Full-Stack Web Developer</p>
+                    <p className='overviewIntroText'>A newly-minted developer with a penchant for user engagement.</p>     
                 </div>
             </section>
         );

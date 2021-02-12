@@ -34,7 +34,7 @@ export default {
             name: 'Alien Movie Quiz App',
             summary: `Built as an academic exercise, this sci-fi quiz leverages real-time feedback, dynamic content population, and replayability.`,
             tech: 'JavaScript/jQuery, HTML, CSS',
-            image: 'https://user-images.githubusercontent.com/58446465/88616825-a7575380-d084-11ea-814c-b8f8694c1ef8.png',
+            image: 'https://user-images.githubusercontent.com/58446465/107818758-ee5d1b80-6d2c-11eb-8968-1622f3f6e30e.png',
             appLink: 'https://morrowrefactor.github.io/alien-quiz-app/',
             codeLink: 'https://github.com/morrowRefactor/alien-quiz-app'
         }

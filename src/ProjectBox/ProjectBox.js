@@ -20,8 +20,8 @@ class ProjectBox extends Component {
                         <a href={this.props.codeLink} target='_blank' rel='noopener noreferrer'><button className='projectBoxButton'>View Code</button></a>
                         {serverLink}
                     </div>
-                    <img className='projectBoxImage' src={this.props.image} alt={this.props.name} />
                 </section>
+                <img className='projectBoxImage' src={this.props.image} alt={this.props.name} />
             </section>
         );
     };

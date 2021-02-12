@@ -1,43 +1,103 @@
 .Overview {
-    width: 80%;
+    width: 90%;
     text-align: center;
 }
 
-.overviewImage {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
-
 .overviewHeader {
-    font-size: 20px;
-    padding: 0px 20px 0px 20px;
+    color: white;
+    font-size: 34px;
+    margin-bottom: 0px;
 }
 
-@media (min-width: 800px) {
+.overviewSubHeader {
+    color: white;
+    margin-top: 0px;
+    padding-bottom: 20%;
+}
+
+.overviewIntroText {
+    font-size: 18px;
+    border-top: 1px solid rgb(185, 185, 185);
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding: 20px 15px 20px 15px;
+}
+
+@media (min-width: 355px) {
+    .overviewHeader {
+        margin-top: 2%;
+    }
+
+    .overviewSubHeader {
+        padding-bottom: 0;
+    }
+
+    .overviewIntroText {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: white;
+        border-top: 1px solid white;
+        border-bottom: none;
+        padding: 10px 15px 10px 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Overview {
+        margin-bottom: 5%;
+    }
+
+    .overviewHeader {
+        margin-top: 5%;
+    }
+
+    .overviewSubHeader {
+        padding-bottom: 30px;
+    }
+
+    .overviewIntroText {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 15px 20px 15px;
+        border-top: 1px solid rgb(185, 185, 185);
+        border-bottom: 1px solid rgb(185, 185, 185);
+    }
+}
+
+@media (min-width: 1200px) {
     .Overview {
         width: 60%;
         display: flex;
         flex-direction: row;
-        margin-bottom: 20px;
-    }
-
-    .overviewImage {
-        border: 1px solid rgb(170, 170, 170);
-        border-radius: 3px;
-        width: 159px;
-        height: 107px;
-        margin: 25px 20px auto 0px;
-    }
-
-    .overviewHeader {
-        font-size: 22px;
-        padding: 0px;
+        margin: auto auto 20px auto;
+        text-align: center;
     }
 
     .Overview_bio {
         width: 90%;
         font-size: 18px;
-        text-align: left;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .overviewHeader {
+        font-size: 80px;
+        padding: 0px;
+        text-align: center;
+        margin: 12% auto auto auto;
+    }
+
+    .overviewSubHeader {
+        font-size: 40px;
+        margin: 0px auto 0px auto;
+    }
+
+    .overviewIntroText {
+        color: white;
+        font-size: 30px;
+        border-top: 1px solid white;
+        border-bottom: none;
+        padding: 20px 15px 20px 15px;
     }
 }
