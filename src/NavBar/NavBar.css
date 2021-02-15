@@ -68,6 +68,11 @@
     display: inline-block;
 }
 
+.show > li {
+    display: inline-block;
+    width: 100%;
+}
+
 .hidden {
     display: none;
 }
