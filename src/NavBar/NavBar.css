@@ -151,12 +151,12 @@ button:hover,
     .Topnav > ul {
         position: relative;
         width: 50%;
-        margin: auto 50px auto auto;
+        margin: 10px 50px auto auto;
         background-color: transparent;
     }
 
     .topNavLink {
-        font-size: 22px;
+        font-size: 24px;
         margin-left: 20px;
     }
 }
