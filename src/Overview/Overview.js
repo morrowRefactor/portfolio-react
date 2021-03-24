@@ -19,7 +19,7 @@ class Overview extends Component {
                 <div className="Overview_bio">
                     <h2 className='overviewHeader'>KURT MORROW</h2>
                     <p className='overviewSubHeader'>Full-Stack Web Developer</p>
-                    <p className='overviewIntroText'>A newly-minted developer with a penchant for user engagement.</p>     
+                    <p className='overviewBioText'>A newly-minted developer with a penchant for user engagement.</p>     
                 </div>
             </section>
         );

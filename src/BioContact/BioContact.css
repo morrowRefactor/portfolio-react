@@ -1,11 +1,21 @@
 .BioContact {
     width: 100%;
     text-align: center;
-    margin-top: 20%;
     margin-bottom: 20px;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    margin-top: 40vw;
     background-color: white;
+}
+
+.bioContactBackground {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bioBackgroundImage {
+    width: 100%;
 }
 
 .BioContact_overview,
@@ -14,6 +24,10 @@
     width: 70%;
     margin-right: auto;
     margin-left: auto;
+}
+
+.BioContact_overview {
+    padding-top: 15px;
 }
 
 .bioContactImage {
@@ -46,6 +60,7 @@
 @media (min-width: 768px) {
     .BioContact {
         width: 100%;
+        margin-top: 30vw;
     }
 
     .BioContact_overview,
@@ -66,7 +81,7 @@
     .BioContact {
         display: flex;
         flex-direction: row;
-        margin-top: 10%;
+        margin-top: 20vw;
         height: 70vh;
     }
 

@@ -6,6 +6,7 @@ class BioContact extends Component {
     render() {
         return (
             <section className='BioContact'>
+                <div className='bioContactBackground'><img className='bioBackgroundImage' src='https://user-images.githubusercontent.com/58446465/107711280-3a9c5300-6c7c-11eb-8930-eca743bae8ff.jpg' /></div>
                 <section className='BioContact_overview'>
                     <img className="bioContactImage" src='https://user-images.githubusercontent.com/58446465/88499990-6b38cb80-cf7c-11ea-9e71-9caf9e931674.png' alt="morrowRefactor Avatar" />
                     <div className='bioContactMediaLeft'>

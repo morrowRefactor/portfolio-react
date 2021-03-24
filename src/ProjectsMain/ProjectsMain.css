@@ -9,6 +9,23 @@
     border-bottom: 1px solid rgb(185, 185, 185);
 }
 
+.overviewIntroText {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    border-top: 1px solid rgb(185, 185, 185);
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding: 20px 15px 20px 15px;
+}
+
+/* intermediate adjustment */
+@media (min-width: 500px) {
+    .overviewIntroText {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) {
     .ProjectsMain {
         width: 70%;
@@ -20,7 +37,6 @@
 @media (min-width: 1200px) {
     .ProjectsMain {
         width: 80%;
-        margin-top: 10%;
     }
 
     .ProjectsMain > h3 {

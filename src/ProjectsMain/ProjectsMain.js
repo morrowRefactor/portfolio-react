@@ -22,6 +22,9 @@ class ProjectsMain extends Component {
 
         return (
             <section className="ProjectsMain">
+                <div className='Overview_intro'>
+                    <p className='overviewIntroText'>A newly-minted developer with a penchant for user engagement.</p> 
+                </div>
                 <h3>Projects</h3>
                 <section className='ProjectsMain_projects'>
                     {projects}

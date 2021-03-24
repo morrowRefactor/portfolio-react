@@ -2,7 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
     border: none;
     font-weight: bold;
     padding: 5px 10px 5px 10px;
@@ -87,12 +90,8 @@
     color: white;
     border: none;
     text-decoration: none;
-    font-size: .90em;
+    font-size: .95em;
     background-color: transparent;
-}
-
-.hamburgerButton {
-    color: black;
 }
 
 button:hover,
@@ -100,10 +99,19 @@ button:hover,
     cursor: pointer;
 }
 
-
+/* tablet adjustments */
 @media (min-width: 768px) {
+    .Topnav {
+        padding: 20px 30px 20px 30px;
+    }
+
+    .topNavImage {
+        width: 24px;
+        margin: 5px auto auto 0px;
+    }
+
     .hamburgerButton {
-        margin-right: 10px;
+        font-size: 24px;
     }
 
     .Topnav ul {
@@ -134,8 +142,8 @@ button:hover,
 
     .topNavImage {
         display: block;
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
     }
 
     .hamburger,
@@ -156,7 +164,7 @@ button:hover,
     }
 
     .topNavLink {
-        font-size: 24px;
+        font-size: 28px;
         margin-left: 20px;
     }
 }

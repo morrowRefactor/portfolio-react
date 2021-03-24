@@ -1,6 +1,18 @@
 .Overview {
-    width: 90%;
+    width: 100%;
     text-align: center;
+    background-image: url("https://user-images.githubusercontent.com/58446465/107708527-7b926880-6c78-11eb-897d-93f7d21c2298.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Overview_bio {
+    width: 90%;
+    margin: 25vw auto auto auto;
+}
+
+.overviewBioText {
+    display: none;
 }
 
 .overviewHeader {
@@ -15,43 +27,49 @@
     padding-bottom: 20%;
 }
 
-.overviewIntroText {
-    font-size: 18px;
-    border-top: 1px solid rgb(185, 185, 185);
-    border-bottom: 1px solid rgb(185, 185, 185);
-    padding: 20px 15px 20px 15px;
-}
+/* intermediate adjustment */
+@media (min-width: 500px) {
+    .Overview_bio {
+        margin-top: 15vw;
+    }
 
-@media (min-width: 355px) {
     .overviewHeader {
-        margin-top: 2%;
+        font-size: 40px;
     }
 
     .overviewSubHeader {
-        padding-bottom: 0;
+        font-size: 22px;
+        padding-bottom: 0px;
     }
 
-    .overviewIntroText {
-        margin-top: 0px;
-        margin-bottom: 10px;
+    .overviewBioText {
+        display: inline-block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
         color: white;
-        border-top: 1px solid white;
-        border-bottom: none;
-        padding: 10px 15px 10px 15px;
+        border-top: 1px solid rgb(185, 185, 185);
+        border-bottom: 1px solid rgb(185, 185, 185);
+        padding: 20px 15px 20px 15px;
     }
 }
 
+/* tablet adjustments */
 @media (min-width: 768px) {
     .Overview {
-        margin-bottom: 5%;
+        margin-bottom: 0px;
+        background-image: url("https://user-images.githubusercontent.com/58446465/107711280-3a9c5300-6c7c-11eb-8930-eca743bae8ff.jpg");
     }
 
     .overviewHeader {
-        margin-top: 5%;
+        font-size: 44px;
+        margin-top: 0px;
     }
 
     .overviewSubHeader {
-        padding-bottom: 30px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
 
     .overviewIntroText {
@@ -64,9 +82,10 @@
     }
 }
 
+/* desktop adjustments */
 @media (min-width: 1200px) {
     .Overview {
-        width: 60%;
+        height: 70%;
         display: flex;
         flex-direction: row;
         margin: auto auto auto auto;
@@ -75,18 +94,16 @@
 
     .Overview_bio {
         width: 90%;
-        font-size: 18px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     .overviewHeader {
         font-size: 80px;
         padding: 0px;
         text-align: center;
-        margin: 5% auto auto auto;
     }
 
     .overviewSubHeader {
@@ -94,11 +111,9 @@
         margin: 0px auto 0px auto;
     }
 
-    .overviewIntroText {
+    .overviewBioText {
         color: white;
         font-size: 30px;
-        border-top: 1px solid white;
-        border-bottom: none;
         padding: 20px 15px 20px 15px;
     }
 }
